@@ -1,0 +1,6 @@
+<h1>ToDos</h1>
+<p><%= link_to 'New Page', new_page_path %></p>
+<% @toDos.each do |toDo| %>
+    <h2> <%= toDo.title %> </h2>
+    <% link_to "Show ToDo", toDo_path(toDo) %> 
+<% end %> 
